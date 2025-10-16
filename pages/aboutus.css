@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+.logo{
+    display: flex;
+}
+.logo img {
+  height: 50px;
+}
+
+.school-name h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.school-name span {
+  font-size: 13px;
+  color: gray;
+}
+
+.top-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.main-nav {
+  background-color: #caa91e;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu  li  a {
+  display: block;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  min-width: 220px;
+  z-index: 1000;
+  flex-direction: column;
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+.about-container {
+    margin: 10px;
+    background: #cfab22;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 50px 60px 50px;
+    box-sizing: border-box;
+    width: 60vw;
+    height: 40vh;
+    position: relative;
+    left: 20vw;
+}
+
+.about-left {
+    flex: 1.4;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-left h1 {
+    font-size: 3rem;
+    color: #23272b;
+    margin-bottom: 0.4em;
+    font-weight: 600;
+}
+
+.about-left p {
+    font-size: 1.3rem;
+    color: #23272b;
+    font-weight: 400;
+    margin: 0;
+}
+
+.about-right img {
+    height: 220px;
+    border-radius: 30px;
+}
+.main-section {
+    max-width:  ninety-five percent;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 2.5rem 3.5rem;
+}
+
+.main-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.school-badge {
+    width: 340px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-right {
+    flex: 2;
+    padding-left: 48px;
+}
+
+.legacy {
+    color: #293042;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.main-right h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #18181b;
+    margin-bottom: 1.2rem;
+}
+
+.motto {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.main-right p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .main-section {
+        flex-direction: column;
+        padding: 1.2rem;
+    }
+    .main-right {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    .school-badge {
+        width: 220px;
+    }
+}
