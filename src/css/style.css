@@ -1104,7 +1104,7 @@ body {
 
 .fivelement .element4 img {
     width: 50%;
-    absolute;
+    /* absolute; */
     bottom: 0;
     opacity: .9;
 }
@@ -2049,7 +2049,7 @@ body {
     border-radius: 50%;
     background: #fff;
     text-indent: -9999px;
-    b margin: 0px 10px;
+    /* b margin: 0px 10px; */
 }
 
 .dotes .slick-dots li.slick-active button {
@@ -3329,7 +3329,6 @@ body {
         padding: 0 0 40px 0;
     }
 
-    .snapshot {}
 
     .stat {
         width: 150px;
