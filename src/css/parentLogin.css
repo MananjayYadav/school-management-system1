@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.login-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.school-name h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1e3a5f;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+}
+
+.school-name h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #4CAF50;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+}
+
+.school-name p {
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* Login Section */
+.login-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.welcome-text {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: transparent;
+}
+
+.form-group input:focus {
+    border-bottom-color: #4285f4;
+}
+
+/* Password Field */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password:hover {
+    color: #666;
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.forgot-password a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #357ae8;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.helpline {
+    color: #4285f4 !important;
+    font-weight: 500;
+}
+
+.email {
+    color: #4285f4 !important;
+    font-weight: 500;
+}
+
+.timing {
+    font-size: 12px !important;
+    color: #999 !important;
+}
+
+/* App Section */
+.app-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.app-store img {
+    height: 40px;
+    width: auto;
+}
+
+.school-code {
+    font-size: 13px;
+    color: #666;
+}
+
+.school-code strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .school-name h1,
+    .school-name h2 {
+        font-size: 32px;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
