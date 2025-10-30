@@ -2131,6 +2131,59 @@ h6 {
         padding: 0
     }
 }
+/* main */
+/* Fee Structure Section */
+.feestructurepage {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: "Poppins", sans-serif;
+}
+
+.feestructurepage h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.feestructurepage table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.feestructurepage table th,
+.feestructurepage table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.feestructurepage table th {
+    background-color: #d1af21;
+    color: #fff;
+    font-weight: 600;
+}
+
+.feestructurepage table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.feestructurepage table tr:hover {
+    background-color: #ffe599;
+}
+
+.feestructurepage p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.6;
+}
 
 
 
