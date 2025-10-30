@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Public junior School - Login</title>
+    <link rel="stylesheet" href="../css/parentLogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <!-- Logo and Header -->
+            <div class="logo-section">
+                <img src="logo.png" alt="Holy Public Junior School Logo" class="logo">
+                <div class="school-name">
+                    <h1>HOLY</h1>
+                    <h2>PUBLIC JUNIOR SCHOOL</h2>
+                    <p>A PREMIUM INTERNATIONAL SCHOOL</p>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div class="login-section">
+                <h3>Log in to your account</h3>
+                <p class="welcome-text">Welcome back! Please log in to your account.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="userId">User ID</label>
+                        <input type="text" id="userId" name="userId" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" name="password" required>
+                            <button type="button" class="toggle-password">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">LOGIN</button>
+                </form>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <p class="helpline">📞 Helpline: +91 1234567890</p>
+                    <p class="email">✉️ parents@.com</p>
+                    <p class="timing">(9:00 AM to 5:30 PM, Monday - Saturday)</p>
+                </div>
+
+                <!-- App Download Section -->
+                <div class="app-section">
+                    <div class="app-buttons">
+                        <a href="#" class="app-store">
+                            <img src="google-play.png" alt="Get it on Google Play">
+                        </a>
+                        <a href="#" class="app-store">
+                            <img src="app-store.png" alt="Download on App Store">
+                        </a>
+                    </div>
+                    <p class="school-code">School Code For Mobile App: <strong>holypublic</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
