@@ -425,7 +425,7 @@ i {
 
 .founder-note {
   background: #fff;
-  padding: 80px 0;
+  padding: 80px 40px; 
   overflow: hidden;
 }
 
@@ -434,25 +434,56 @@ i {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 60px; 
 }
 
 .founder-note img {
-  width: 500px;  
+  width: 100%;
+  max-width: 500px; 
   height: auto;
   object-fit: cover;
   border-radius: 12px;
-  max-width: none; 
-  position: relative;
-  right: 6vw;
+  display: block;
 }
 
 .text-side {
   flex: 1;
-  padding-left: 40px;
-  gap: 20px;
-  position: relative;
-  left: 11vw;
+  padding-left: 0;
 }
+
+.founder-note {
+  background: #fff;
+  padding: 80px 40px;
+  overflow: hidden;
+}
+
+.founder-note .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+
+
+.founder-note .image-side {
+  flex: 0 0 300px; 
+}
+
+.founder-note .image-side img {
+  width: 100%;
+  min-width: 550px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+
+.founder-note .text-side {
+  flex: 1;
+}
+
 
 .founder-note .founder-note-in small {
   font-size: 14px;
@@ -466,7 +497,7 @@ i {
   font-size: 34px;
   font-weight: 400;
   font-family: 'Roboto Slab', serif;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
   position: relative;
 }
 
@@ -488,23 +519,44 @@ i {
   margin-bottom: 20px;
 }
 
-/* 👇 Responsive (mobile view) */
-@media (max-width: 768px) {
+/* Responsive for tablets */
+@media (max-width: 992px) {
   .founder-note .row {
-    flex-direction: column;
+    gap: 30px;
+    align-items: center;
   }
 
-  .text-side {
-    padding-left: 0;
-    margin-top: 20px;
+  .founder-note .image-side {
+    flex: 0 0 250px;
   }
 
   .founder-note img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 }
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .founder-note .row {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .founder-note .image-side {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .founder-note .text-side {
+    width: 100%;
+  }
+
+  .founder-note img {
+    max-width: 300px;
+  }
+}
+
 
 .whychooseall {
     display: inline-block !important

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Blog & Events</title>
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel-slides">
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&h=400&fit=crop" alt="Academic">
+                <div class="carousel-overlay">
+                    📚 Academic
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&h=400&fit=crop" alt="Admissions">
+                <div class="carousel-overlay">
+                    🎓 Admissions
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=400&fit=crop" alt="Campus Life">
+                <div class="carousel-overlay">
+                    🏫 Admissions
+                </div>
+            </div>
+        </div>
+        <div class="carousel-arrows">
+            <div class="arrow" onclick="moveSlide(-1)">❮</div>
+            <div class="arrow" onclick="moveSlide(1)">❯</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+            <button class="tab-btn active" onclick="switchTab(0)">Latest Blogs</button>
+            <button class="tab-btn" onclick="switchTab(1)">Popular Blogs</button>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <h2 style="margin-bottom: 20px; font-size: 20px;">10 Latest Blogs</h2>
+
+                <!-- Blog Post 1 -->
+                <div class="blog-section">
+                    <div class="date-badge">
+                        <span class="day">02</span>
+                        <span class="month">Sep 2025</span>
+                        <span class="weekday">Sunday</span>
+                    </div>
+                    <h2 class="blog-title">Living at School vs. Commuting: Key Differences Between Boarding and Day-Boarding School Life</h2>
+                    <span class="category-tag">📚 Admissions</span>
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=400&fit=crop" alt="School Students" class="blog-image">
+                    <p class="blog-description">
+                        Choosing the right school for a child is a decision that involves various factors—academic reputation, extracurricular activities, location, and, most importantly, the type of schooling environment that best suits the child's needs...
+                    </p>
+                    <button class="view-details-btn">
+                        VIEW DETAILS →
+                    </button>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-section">
+                    <div class="date-badge">
+                        <span class="day">25</span>
+                        <span class="month">Aug 2025</span>
+                        <span class="weekday">Monday</span>
+                    </div>
+                    <h2 class="blog-title">Sharda World School's Grand Two-Day Football Tournament</h2>
+                    <span class="category-tag">🏟️ Campus Life</span>
+                    <span class="category-tag">🎉 Events</span>
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=400&fit=crop" alt="Football Tournament" class="blog-image">
+                    <p class="blog-description">
+                        On 25th August 2025, Sharda World School transformed its grounds into a vibrant arena where sportsmanship, spirit, and glory took center stage...
+                    </p>
+                    <button class="view-details-btn">
+                        VIEW DETAILS →
+                    </button>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-section">
+                    <div class="date-badge">
+                        <span class="day">08</span>
+                        <span class="month">Aug 2024</span>
+                        <span class="weekday">Thursday</span>
+                    </div>
+                    <h2 class="blog-title">Sharda World School Receives the "Outstanding School Award"</h2>
+                    <span class="category-tag">📰 News & Events</span>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop" alt="Award Ceremony" class="blog-image">
+                    <p class="blog-description">
+                        "Outstanding School in Learning Initiative and Skill Development Award 2024" by the ARDORCOMM Education Leadership Award...
+                    </p>
+                    <button class="view-details-btn">
+                        VIEW DETAILS →
+                    </button>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">></button>
+                    <button class="page-btn">Last »</button>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="categories-box">
+                    <h3 class="categories-title">📁 CATEGORIES</h3>
+                    <div class="category-item">
+                        <span>Events</span>
+                        <span class="category-count">15</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Excursions</span>
+                        <span class="category-count">1</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Academic</span>
+                        <span class="category-count">22</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Campus Life</span>
+                        <span class="category-count">26</span>
+                    </div>
+                    <div class="category-item">
+                        <span>News</span>
+                        <span class="category-count">9</span>
+                    </div>
+                    <div class="category-item">
+                        <span>Admissions</span>
+                        <span class="category-count">25</span>
+                    </div>
+                </div>
+
+                <div class="tags-box">
+                    <h3 class="categories-title">🏷️ TAGS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

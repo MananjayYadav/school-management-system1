@@ -1,5 +1,5 @@
 .iswbutton {
-    background: #d1af21;
+    background: #31A649;
     line-height: 50px;
     height: 54px;
     padding: 0 50px;
@@ -10,7 +10,7 @@
     border-radius: 50px;
     border: 0;
     position: relative;
-    border: 2px solid #d1af21;
+    border: 2px solid #31A649;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
     overflow: hidden;
     font-weight: bold;
@@ -49,10 +49,11 @@
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
+/*url(../newimages/SWS_Insidebanner.jpg) no-repeat*/
 .sliderinner {
     position: relative;
     overflow: hidden;
-    background: #d1af21;
+    background: #31A649;
     border-radius: 18px;
     margin: 20px 0;
     padding: 80px 80px;
@@ -248,7 +249,7 @@
 }
 
 .cajob-listing strong i {
-    color: #d1af21;
+    color: #31A649;
     margin: 0 10px 0 0;
 }
 
@@ -321,18 +322,18 @@
 }
 
 
-.swsnews-hub {
+.news-hub {
     padding: 60px 0 0px 0;
 }
 
-.swsnews-hub .itemsec {
+.news-hub .itemsec {
     padding: 30px;
     border: 1px solid #BABABA;
     border-radius: 18px;
     margin: 20px 10px;
 }
 
-.swsnews-hub .item {
+.news-hub .item {
     height: 200px;
     overflow: hidden;
     padding-bottom: 30px;
@@ -364,7 +365,7 @@
 .new-galtab li button.active,
 .new-galtab li button:hover {
     border: 0 !important;
-    background: #d1af21 !important;
+    background: #31A649 !important;
     color: #fff !important;
 }
 
@@ -502,7 +503,7 @@
 
 .gallery-slider .lSAction .lSPrev:hover,
 .gallery-slider .lSAction .lSNext:hover {
-    background: url(../newimages/left-chevron.png) no-repeat #d1af21;
+    background: url(../newimages/left-chevron.png) no-repeat #31A649;
 }
 
 .gallery-slider .lSAction .lSPrev,
@@ -563,8 +564,8 @@
 }
 
 .gallery-tab .close-gallery:hover {
-    background: #d1af21 !important;
-    border: 1px solid #d1af21;
+    background: #31A649 !important;
+    border: 1px solid #31A649;
     color: #fff;
 }
 
@@ -624,17 +625,17 @@ body.gallery-page #content {
     padding: 0px;
 }
 
-.Ventures {
+.gallery-ventures {
     padding: 50px 0;
 }
 
-.Ventures ul {
+.gallery-ventures ul {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
 }
 
-.Ventures ul li {
+.gallery-ventures ul li {
     width: 20%;
     text-align: center;
     padding: 20px 10px;
@@ -642,40 +643,68 @@ body.gallery-page #content {
 
 
 .visonmission {
-    padding: 50px 0 70px 0;
+    padding: 80px 0;
+    background-color: #f8f8f8;
 }
 
-.visonmission .misionicon {
-    width: 65%;
-    display: block;
-    margin: 10px auto;
+.visonmission .misionicon img {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.visonmission .misionicon img:hover {
+    transform: scale(1.05);
 }
 
 .visonmission .misioncontent {
-    text-align: center;
-    padding: 0px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    height: 100%;
+    text-align: left;
+    padding: 20px 30px;
 }
 
 .visonmission .misioncontent h4 {
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 42px;
+    font-weight: 600;
     font-style: italic;
+    color: #222;
+    margin-bottom: 15px;
+    position: relative;
 }
 
-.visonmission .secvi {
-    order: 2;
+.visonmission .misioncontent p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
 }
 
-.ncorevmain {
+/* Center content on smaller devices */
+@media (max-width: 768px) {
+    .visonmission .misioncontent {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .visonmission .misioncontent h4 {
+        font-size: 32px;
+    }
+
+    .visonmission .misioncontent p {
+        font-size: 16px;
+    }
+
+    .visonmission .misionicon img {
+        width: 80%;
+    }
+}
+
+
+.nswscorevmain {
     padding: 0 0 80px 0;
 }
 
-.ncorevmain .ncorev {
+.nswscorevmain .nswscorev {
     background: #C9FDD4;
     padding: 40px 50px;
     border-radius: 18px;
@@ -683,16 +712,16 @@ body.gallery-page #content {
     margin-bottom: 50px;
 }
 
-.ncorevmain .ncorev.colorchange {
+.nswscorevmain .nswscorev.colorchange {
     background: #DBEFFD;
 }
 
-.ncorevmain .ncorev h5 {
+.nswscorevmain .nswscorev h5 {
     font-size: 40px;
     margin: 0 0 20px 0;
 }
 
-.ncorevmain .ncorev li {
+.nswscorevmain .nswscorev li {
     font-size: 16px;
     line-height: 25px;
     color: #101010;
@@ -701,7 +730,7 @@ body.gallery-page #content {
     position: relative;
 }
 
-.ncorevmain .ncorev strong {
+.nswscorevmain .nswscorev strong {
     font-size: 20px;
     margin: 20px 0 10px 0;
     display: block;
@@ -709,7 +738,7 @@ body.gallery-page #content {
 
 
 
-.ncorevmain .ncorev li:before {
+.nswscorevmain .nswscorev li:before {
     content: "";
     position: absolute;
     top: 8px;
@@ -862,7 +891,7 @@ body.gallery-page #content {
 
 .whysldier .slick-prev:hover,
 .whysldier .slick-next:hover {
-    background-color: #d1af21;
+    background-color: #31A649;
 }
 
 .gameinout .gameinoutin {
@@ -1556,7 +1585,7 @@ body.gallery-page #content {
 }
 
 .about-lisnew li a:hover {
-    color: #d1af21;
+    color: #31A649;
     text-decoration: underline;
 }
 
@@ -1750,10 +1779,6 @@ body.gallery-page #content {
     margin: 0;
 }
 
-/*.ledership .imgse .plus-ico { display: none; position: absolute; top: 36%; right: -40px; width: 90px; height: 90px; border-radius: 100px; background: #000; color: #fff; font-size: 55px; text-align: center; line-height: 86px }
-.ledership .imgse .plus-ico:hover { background: #2fa600 !important }
-.ledership .imgse:hover .plus-ico { background: #2fa600 }*/
-
 .ledershipnew .imgse .imgs {
     width: 100%;
     height: 100%;
@@ -1825,38 +1850,29 @@ body.gallery-page #content {
     margin: 30px 0 0 0;
 }
 
-/*.ledership:nth-child(2n) .imgse .plus-ico { right: inherit; left: -40px }
-.ledership .imgse .imgs img:hover { transform: scale(1.1, 1.1); transition: .8s }
-.ledership .imgse .imgs, .popup .imgse .img { width: 360px; height: 360px; }
-.ledership .imgse .plus-ico { right: -20px }
-.ledership .imgse { width: 300px; margin: 0 100px }*/
 
-/* LEADERSHIP PAGE end */
-
-/* New CSS classes end */
 @media (max-width: 767px) {
-    .swsheader {}
 
-    .swsinnseslider {
+    .innseslider {
         margin-top: 110px;
     }
 
-    .swssliderinner {
+    .sliderinner {
         padding: 30px;
     }
 
-    .swssliderinner img {
+    .sliderinner img {
         width: 40%;
     }
 
-    .swssliderinner h1 {
+    .sliderinner h1 {
         font-size: 42px;
         line-height: 52px;
         position: relative;
         z-index: 1;
     }
 
-    .swssliderinner p {
+    .sliderinner p {
         position: relative;
         z-index: 1;
     }
@@ -1911,16 +1927,16 @@ body.gallery-page #content {
         margin: 10px 0;
     }
 
-    .swsgallery-tab {
+    .gallery-tab {
         width: auto;
         padding: 10px;
     }
 
-    .swsgallery-tab h3 {
+    .gallery-tab h3 {
         margin-top: 80px;
     }
 
-    .swsnews-hub {
+    .news-hub {
         padding: 0;
     }
 
