@@ -27,26 +27,25 @@ body {
 }
 
 /* Logo Section */
-.logo-section {
+ .logo-section {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
     gap: 20px;
-}
+} 
 
-.logo {
+ .logo1 {
     width: 120px;
     height: auto;
 }
 
-.school-name h1 {
+ .school-name h1 {
     font-size: 42px;
     font-weight: bold;
     color: #1e3a5f;
     letter-spacing: 2px;
     margin: 0;
-    line-height: 1;
-}
+ }
 
 .school-name h2 {
     font-size: 42px;
@@ -54,16 +53,15 @@ body {
     color: #4CAF50;
     letter-spacing: 2px;
     margin: 0;
-    line-height: 1;
-}
+} 
 
-.school-name p {
+ .school-name p {
     font-size: 11px;
     color: #666;
     letter-spacing: 1px;
     margin-top: 5px;
     font-weight: 500;
-}
+} 
 
 /* Login Section */
 .login-section h3 {

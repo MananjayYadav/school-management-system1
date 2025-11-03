@@ -756,18 +756,6 @@ body.gallery-page #content {
     border: 1px solid #000;
 }
 
-.heading h3 {
-    font-size: 48px;
-    text-align: center;
-    padding: 0 0 30px 0;
-}
-
-.heading h4 {
-    font-size: 40px;
-    text-align: center;
-    padding: 0 0 30px 0;
-}
-
 .muchmorese {
     padding: 60px 0;
 }
@@ -1413,7 +1401,6 @@ body.gallery-page #content {
 
 .leaningspace .hostelfec-content ul {
     list-style: none;
-    padding: ;
     margin: 0;
 }
 
@@ -2084,10 +2071,7 @@ body.gallery-page #content {
         padding: 10px 20px;
     }
 
-    .hitechclass .headingh1 h2 {
-        font-size: 30px;
-    }
-
+    
     .leaningspace .hostelfec-content h4 {
         font-size: 24px;
     }
