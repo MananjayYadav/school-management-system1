@@ -4,175 +4,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holy Public School</title>
+    <title>Quick Admission Enquiry | Holy Public Junior School</title>
+
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/common.css">
     <link rel="stylesheet" href="/src/css/animate.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* BACKGROUND IMAGE + OVERLAY */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 60px 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 85, 50, 0.72);
+            /* dark rich green */
+        }
+
+        /* FORM BOX */
+        .form-wrapper {
+            position: relative;
+            z-index: 10;
+            background: #fff;
+            padding: 45px 40px;
+            border-radius: 16px;
+            max-width: 500px;
+            margin-right: -100px;
+            /* shifted more to right */
+            margin-left: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+            opacity: 0;
+        }
+
+        .form-wrapper.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .form-wrapper h2 {
+            text-align: center;
+            font-weight: 700;
+            color: #00693e;
+            margin-bottom: 10px;
+        }
+
+        .form-wrapper p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        /* INPUTS */
+        .form-control,
+        .form-select {
+            border-radius: 10px;
+            height: 45px;
+            border: 1px solid #ccc;
+            transition: all 0.3s;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #00985f;
+            box-shadow: 0 0 0 0.15rem rgba(0, 152, 95, 0.25);
+        }
+
+        .form-check-label {
+            color: #444;
+            font-size: 0.9rem;
+        }
+
+        /* APPLY NOW BUTTON */
+        .btn-apply {
+            background: linear-gradient(135deg, #FFD700, #E6BE00);
+            /* gold gradient */
+            color: #000;
+            border: none;
+            border-radius: 50px;
+            width: 100%;
+            padding: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Button hover animation (left-to-right black sweep) */
+        .btn-apply::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            transition: all 0.4s ease;
+            z-index: 0;
+        }
+
+        .btn-apply:hover::before {
+            left: 0;
+        }
+
+        .btn-apply span {
+            position: relative;
+            z-index: 1;
+            transition: color 0.4s ease;
+        }
+
+        .btn-apply:hover span {
+            color: #FFD700;
+        }
+
+        .mandatory-note {
+            text-align: center;
+            color: #777;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 991px) {
+            .form-wrapper {
+                margin: 40px auto;
+                width: 90%;
+            }
+
+            .hero-section {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <section class="hero-section">
+        <div class="overlay"></div>
 
-    <section class="headertop">
-
-        <p style="text-align:center; margin:0;">Admission Open 2026-27 UKG to Class 12th <a href="/" target="_blank"
-                style="color:#000;font-weight:bold;font-size:12px; background:#d1af21; line-height:12px; padding:3px 8px; border-radius:4px; margin:0 0 0 5px;">
-                Apply Now </a></p>
-
-    </section>
-
-    <section class="header" id="header-home">
-        <div class="headerlogos">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div style="display: flex; align-items: center;">
-                            <div class="logo">
-                                <a href="#"><img alt="Holy Public Junior School" src="/src/assets/logo/holy1.png"
-                                        alt="Holy Public Junior School" /></a>
-                            </div>
-                            <div class="logo2">
-                                <h1>Holy Public Junior School, <br> Delhi Gate, Agra</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="headerlink">
-                            <li><a href="/src/html/blog.html">Blog</a></li>
-                            <li><a href="/src/html/parentLogin.html" target="_blank">Parent Login</a></li>
-                            <li><a href="#" target="_blank"><img src="/src/assets/logo/e1.png"
-                                        alt="Holy Public Junior School" width="30px" /> Virtual Tour </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- <div class="navbar">
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li><a href="javascript:void();">About <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <ul class="dropdowns">
-                                <li><a href="about-us">About Us</a></li>
-                                <li><a href="/founders">Founders</a></li>
-                                <li><a href="/leadership">Leadership Team</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:void();">Admissions <i class="fa fa-angle-down"
-                                    aria-hidden="true"></i></a>
-                            <ul class="dropdowns">
-                                <li><a href="/admissions">Admission Guidelines</a></li>
-                                <li><a href="/">Apply
-                                        Now</a></li>
-                        </li>
-                    </ul>
-                    </li>
-                    <li><a href="javascript:void();">Academic <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                        <ul class="dropdowns">
-                            <li><a href="/examination-policies">Examination Policies</a></li>
-                            <li><a href="/src/html/feestructure.html">Fee Structure</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void();">More than a school <i class="fa fa-angle-down"
-                                aria-hidden="true"></i></a>
-                        <ul class="dropdowns">
-                            <li><a class="dropdown-item" href="/why-choose-us">Why Choose
-                                    Us</a></li>
-                            <li><a class="dropdown-item" href="/career">Career</a></li>
-                            <li><a class="dropdown-item" href="/our-campus">Our Campus</a></li>
-                            <li><a class="dropdown-item" href="/gallery">Gallery</a></li>
-                            <li><a class="dropdown-item" href="/news">SWS News Hub</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="/apply-now" target="_blank">Apply Now</a></li>
-
-                    </ul>
-                </div>
-            </nav>
-
-        </div>
-    </section> -->
-
-            <div class="navbar">
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li><a href="javascript:void();">About <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <ul class="dropdowns">
-                                <li><a href="/src/html/about.html">About Us</a></li>
-                                <li><a href="/src/html/founder.html">Founders</a></li>
-                                <li><a href="/src/html/leadership.html">Leadership Team</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:void();">Admissions <i class="fa fa-angle-down"
-                                    aria-hidden="true"></i></a>
-                            <ul class="dropdowns">
-                                <li><a href="/src/html/admissionguidline.html">Admission Guidelines</a></li>
-                                <li><a href="/src/html/apllynow.html">Apply
-                                        Now</a></li>
-                        </li>
-                    </ul>
-                    </li>
-                    <li><a href="javascript:void();">Academic <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                        <ul class="dropdowns">
-                            <li><a href="/src/html/examinationpolicies.html">Examination Policies</a></li>
-                            <li><a href="/src/html/feestructure.html">Fee Structure</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void();">More than a school <i class="fa fa-angle-down"
-                                aria-hidden="true"></i></a>
-                        <ul class="dropdowns">
-                            <li><a class="dropdown-item" href="/src/html/whychooseus.html">Why Choose
-                                    Us</a></li>
-                            <li><a class="dropdown-item" href="/src/html/career.html">Career</a></li>
-                            <li><a class="dropdown-item" href="/src/html/ourcampus.html">Our Campus</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="/src/html/apllynow.html" target="_blank">Apply Now</a></li>
-
-                    </ul>
-                </div>
-            </nav>
-
-        </div>
-    </section>
-
-
-
-    <div class="innseslider">
         <div class="container">
-            <div class="sliderinner">
-                <img alt="Holy Public Junior School" src="/src/assets/logo/father.png" class="wow bounceInRight">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Why Choose Us</h1>
-                        <p>Excellence Redefined — Why Holy Public Junior School Leads the Way</p>
+            <div class="form-wrapper animate__animated animate__fadeInRight">
+                <h2>Quick Admission Enquiry</h2>
+                <p>Admissions Open 2026–27</p>
+
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Student Name*</label>
+                        <input type="text" class="form-control" placeholder="Enter student's name" required>
                     </div>
-                </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Father’s Name*</label>
+                        <input type="text" class="form-control" placeholder="Enter father's name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email ID (Father)*</label>
+                        <input type="email" class="form-control" placeholder="Enter father's email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mobile Number (Father)*</label>
+                        <input type="tel" class="form-control" placeholder="Enter mobile number" pattern="[0-9]{10}"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Seeking Admission in Class*</label>
+                        <select class="form-select" required>
+                            <option value="">Select Class</option>
+                            <option>Play Group</option>
+                            <option>Nursery</option>
+                            <option>LKG</option>
+                            <option>UKG</option>
+                            <option>Class I</option>
+                            <option>Class II</option>
+                            <option>Class III</option>
+                            <option>Class IV</option>
+                            <option>Class V</option>
+                            <option>Class VI</option>
+                            <option>Class VII</option>
+                            <option>Class VIII</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agree" required>
+                        <label class="form-check-label" for="agree">
+                            ✅ I agree to receive information regarding my enquiry
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-apply">
+                        <span>APPLY NOW</span>
+                    </button>
+                    <p class="mandatory-note">*All Fields are Mandatory</p>
+                </form>
             </div>
         </div>
-    </div>
+    </section>
+
 
     <div class="mapsec">
         <img src="/src/assets/logo/background.png" alt="Holy Public Junior School" class="map-1 wow bounceInLeft"
@@ -583,92 +645,6 @@
             </div>
         </div>
 
-        <!-- <section class="newfooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="footelogo">
-
-                            <img alt="Holy Public Junior School" src="/src/assets/logo/holy1.png" style="width:60%;" />
-
-                            <p> Copyright © 2026 Holy Public Junior School.<br /> All Rights Reserved </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-                                    <h6>About</h6>
-                                    <ul>
-                                        <li><a href="/about-us">About Us</a></li>
-                                        <li><a href="/leadership">Leadership Team</a></li>
-                                    </ul>
-                                    <br />
-                                    <h6>More Than A School</h6>
-
-                                    <ul>
-                                        <li><a href="/why-choose-us">Why Choose Us</a></li>
-                                        <li><a href="/career">Career</a></li>
-                                        <li><a href="/our-campus">Our Campus</a></li>
-                                        <li><a href="/gallery">Gallery</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-                                    <h6>Admission</h6>
-                                    <ul>
-                                        <li> <a href="/admissions">Admission Guidelines </a></li>
-                                        <li><a href="/" target="_blank"> Apply Now</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-
-                                    <h6>Quick Links</h6>
-                                    <ul>
-                                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                                        <li><a href="/terms-of-service">Terms of Service</a></li>
-                                        <li><a href="/policies">Policies</a></li>
-                                        <li><a href="/contact-us">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3">
-                        <div class="contanctinfo">
-                            <h6>Address</h6>
-                            <p>1/145 Babu Gulab Rai Marg, Delhi Gate,<br /> Agra (UP) - 282007
-                            </p>
-                            <p><a href="mailto:info@sws.ac.in">info@hpjs.ac.in,</a> <a
-                                    href="mailto:helpdesk@sws.ac.in">helpdesk@hpjs.ac.in</a></p>
-                            <p><a href="tel:+91-9758626210">+91-9758626210,</a> <a
-                                    href="http://bit.ly/3NXJGhU">0562-2850207</a></p>,
-
-                            <div class="socialnew">
-                                <a class="sociable" href=" https://www.facebook.com/share/17KNs9p7ur/?mibextid=wwXIfr
-                                    " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a class="sociable" href="https://www.linkedin.com/" target="_blank"><i
-                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a class="sociable" href="https://www.youtube.com/" target="_blank"><i
-                                        class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                <a class="sociable" href="https://www.instagram.com/holypublicjuniorschool_?igsh=djl4N3VlMHZueWN2
-                                    " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <section class="newfooter">
             <div class="container">
@@ -740,7 +716,7 @@
                             <div class="socialnew">
                                 <a class="sociable" href=" https://www.facebook.com/share/17KNs9p7ur/?mibextid=wwXIfr
                                     " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                
+
                                 <a class="sociable" href="https://www.instagram.com/holypublicjuniorschool_?igsh=djl4N3VlMHZueWN2
                                     " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
@@ -750,6 +726,9 @@
                 </div>
             </div>
         </section>
+
+
+
 
         <script src="/src/Javascript/script.js"></script>
 
@@ -807,6 +786,7 @@
 
             }); 
         </script>
+
 
         <script>
             $(document).ready(function () {
@@ -963,6 +943,27 @@
                 $(this).html(memory);
             });
         </script>
+
+
+
+
+    </section>
+
+    <script src="/src/Javascript/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Animation -->
+    <script>
+        document.addEventListener("scroll", function () {
+            const box = document.querySelector(".form-wrapper");
+            const rect = box.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                box.classList.add("visible");
+            }
+        });
+    </script>
 </body>
 
 </html>

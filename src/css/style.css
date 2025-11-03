@@ -253,6 +253,7 @@ body {
     display: block;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar ul {
@@ -272,6 +273,7 @@ body {
     cursor: pointer;
     width: 14.3%;
     text-align: center;
+    justify-content: center;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
@@ -451,7 +453,8 @@ body {
 .about-sec img {
     display: block;
     margin: 0px auto;
-    width: 60%;
+    width: 90%;
+    height: 80%;
     display: block;
     margin: 0px auto;
 }
@@ -492,7 +495,7 @@ body {
 .about-sec p {
     color: #505050;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
@@ -1101,6 +1104,7 @@ body {
 
 .fivelement .element4 img {
     width: 50%;
+    /* absolute; */
     bottom: 0;
     opacity: .9;
 }
@@ -2045,7 +2049,7 @@ body {
     border-radius: 50%;
     background: #fff;
     text-indent: -9999px;
-    margin: 0px 10px;
+    /* b margin: 0px 10px; */
 }
 
 .dotes .slick-dots li.slick-active button {
@@ -3325,7 +3329,6 @@ body {
         padding: 0 0 40px 0;
     }
 
-    .snapshot {}
 
     .stat {
         width: 150px;
