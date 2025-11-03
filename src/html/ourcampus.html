@@ -4,22 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holy Public School</title>
+    <title>Our Campus - Holy Public School</title>
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/common.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Responsive Styles -->
+    <style>
+        /* Mobile Responsive Fixes */
+        @media (max-width: 768px) {
+            .innseslider h1 {
+                font-size: 28px !important;
+            }
+            
+            .innseslider p {
+                font-size: 14px !important;
+            }
+            
+            .founder-note-in h4 {
+                font-size: 20px !important;
+            }
+            
+            .founder-note-in p {
+                font-size: 14px !important;
+            }
+            
+            .images img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+            
+            .images12 img {
+                width: 100% !important;
+                height: auto !important;
+            }
+            
+            .labss {
+                margin-bottom: 20px;
+            }
+            
+            .col-md-5, .col-md-7 {
+                padding: 15px;
+            }
+            
+            .whychooseall {
+                flex-direction: column;
+            }
+            
+            .imagenae {
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+            
+            .founder-note-in {
+                width: 100% !important;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .innseslider {
+                padding: 20px 0;
+            }
+            
+            .container-fluid {
+                padding: 0 15px;
+            }
+            
+            .button2 {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div id="header-placeholder"></div>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
 
-
-
+    <!-- Banner Section -->
     <div class="innseslider">
         <div class="container">
             <div class="sliderinner">
@@ -34,61 +104,55 @@
         </div>
     </div>
 
+    <!-- About Campus Section -->
     <section class="founder-note campuscss">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-7">
+                <div class="col-md-7 col-12">
                     <div class="founder-note-in">
                         <div class="comment more">
                             <small>Holy Public Junior School</small>
-                            <h4>Our Campus </h4>
+                            <h4>Our Campus</h4>
                             <p>At Holy Public Junior School, our campus has been thoughtfully designed to reflect our
                                 vision of nurturing young minds through a balanced and holistic learning environment. We
-                                believe a school is more than just a place for academics — it is a child’s second home,
+                                believe a school is more than just a place for academics — it is a child's second home,
                                 shaping their values, character, and confidence. Students spend a significant part of
                                 their formative years within the school, and the atmosphere around them plays a vital
                                 role in their growth.
-
-                                <br>
-                                <br>
-
+                                <br><br>
                                 Understanding this deeply, we have built an environment that inspires curiosity,
                                 creativity, and all-round development. Every corner of Holy Public Junior School — from
                                 classrooms to play areas — is crafted to provide safety, comfort, and opportunities for
                                 exploration. Our modern infrastructure supports not only academic excellence but also
                                 emotional, physical, and social development, helping each student learn, grow, and
                                 shine.
-
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 col-12">
                     <div class="images">
-                        <img alt="Holy Public Junior School" src="/src/assets/logo/holy1.png">
+                        <img alt="Holy Public Junior School" src="/src/assets/logo/holy1.png" class="img-fluid">
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- Classrooms Section -->
     <section class="founder-note extracurrmain">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div id="jrclassroom" class="whychooseall extracurr ">
+                    <div id="jrclassroom" class="whychooseall extracurr">
                         <div class="imagenae">
                             <div class="images1 images12">
-                                <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" />
+                                <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid" />
                             </div>
                         </div>
                         <div class="founder-note-in">
                             <div class="comment more">
-
-                                <h4>Junior Classrooms </h4>
+                                <h4>Junior Classrooms</h4>
                                 <p>Bright, cheerful, and spacious classrooms enable children to stay enthusiastic during
                                     the day and study with sheer focus. Each element in our junior classroom is curated
                                     with the thought of young souls in mind. We ensure that there is proper air
@@ -97,33 +161,25 @@
                                     students to not laze around and be involved with the teachers and fellow classmates.
                                     Our classrooms have enough seating to incorporate 40 students in each class without
                                     stuffing the space too much.</p>
-
                             </div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                    
                     <div id="srclassroom" class="whychooseall extracurr extracurrcolor">
                         <div class="imagenae">
                             <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/newimages/classroom/Senior-Classroom.jpg" />
+                                <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid" />
                             </div>
                         </div>
                         <div class="founder-note-in">
                             <div class="comment more">
-
-                                <h4>Senior Classrooms </h4>
+                                <h4>Senior Classrooms</h4>
                                 <p>Our senior classrooms are aesthetically designed to ensure that students from classes
-                                    8th to 12th are excited yet motivated to come to class daily. The airy classrooms
+                                    6th to 8th are excited yet motivated to come to class daily. The airy classrooms
                                     have ample natural light, proper air conditioning, and enough space for students to
                                     move around and not feel confined. The classrooms also have bookshelves where
-                                    students can keep their books if need be. Unfurling a child's imagination with SWS's
-                                    classroom is seamless with the soothing color combination and seating arrangements.
-                                    There is also a two-way study mode – one through the traditional whiteboard and one
-                                    through the digital panel that help students learn by way of presentations, videos,
-                                    case studies, documentaries, and a lot more.
-                                </p>
-
+                                    students can keep their books if need be.</p>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -131,158 +187,79 @@
                 </div>
             </div>
         </div>
-        <div id="ourlabs" class="whychooseall extracurr   milldesec">
+
+        <!-- Labs Section -->
+        <div id="ourlabs" class="whychooseall extracurr milldesec">
             <div class="container-fluid">
                 <div class="founder-note-in milldesecin margininp" style="width:92%;">
                     <div class="comment more">
                         <h4>Labs</h4>
                         <p>Our labs allow students to explore various fields of study by implementing theoretical
-                            knowledge into practical settings. At SWS, we believe that subjects cannot be solely
+                            knowledge into practical settings. At Holy Public Junior School, we believe that subjects cannot be solely
                             understood through books, and it is essential for students to apply what they have learned
-                            in the classes by experimenting in the labs. In our labs, students learn to use evidence and
-                            data to support real issues related to their subjects. From Science, Computers, Social
-                            Sciences, Mathematics to English and Robotics – we have a dedicated lab for each subject
-                            with the proper equipment, spacious seating, adequate lighting, and fascinating interiors
-                            that ensure no study day is a dull day!
-                        </p>
+                            in the classes by experimenting in the labs.</p>
                     </div>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
+
+        <!-- Labs Grid -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 labss">
+                <div class="col-md-4 col-sm-6 col-12 labss">
                     <div class="images1 images12 labimg">
-                        <img alt="Sharda World School"
-                            src="https://www.sws.ac.in/assests/newimages/classroom/Science-Lab.jpg">
+                        <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid">
                     </div>
                     <div class="founder-note-in labss-in">
                         <h4>Science Lab</h4>
                         <p>The Science lab allows students to experiment with different things that they learn in class
-                            and witness the magic of Science themselves!
-                        </p>
+                            and witness the magic of Science themselves!</p>
                     </div>
                 </div>
-                <div class="col-md-4 labss extracurrcolor">
+                
+                <div class="col-md-4 col-sm-6 col-12 labss extracurrcolor">
                     <div class="images1 images12 labimg">
-                        <img alt="Sharda World School"
-                            src="https://www.sws.ac.in/assests/newimages/classroom/Social-Science-Lab.jpg" />
-                    </div>
-                    <div class="founder-note-in labss-in">
-                        <h4>Social Science Lab</h4>
-                        <p>The Social Science lab allows students to investigate how the subject helps solve global
-                            issues through cognitive and cooperative activities.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 labss">
-                    <div class="images1 images12 labimg">
-                        <img alt="Sharda World School"
-                            src="https://www.sws.ac.in/assests/newimages/classroom/Maths-Lab.jpg" />
-                    </div>
-                    <div class="founder-note-in labss-in">
-                        <h4>Math Lab</h4>
-                        <p>The Math lab is a place where students get to explore various patterns, puzzles, games, and
-                            practical learning materials to expand their ideation power.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 labss extracurrcolor">
-                    <div class="images1 images12 labimg">
-                        <img alt="Sharda World School"
-                            src="https://www.sws.ac.in/assests/newimages/classroom/Computer-Lab.jpg">
+                        <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid" />
                     </div>
                     <div class="founder-note-in labss-in">
                         <h4>Computer Lab</h4>
                         <p>Digital experience is one of the most important things a student learns in school, and so our
-                            computer labs come equipped with the latest computers, scanners, and printers embedded with
-                            the latest technology and software for our students to explore.
-                        </p>
+                            computer labs come equipped with the latest computers and software.</p>
                     </div>
                 </div>
-                <div class="col-md-4 labss">
+                
+                <div class="col-md-4 col-sm-6 col-12 labss">
                     <div class="images1 images12 labimg">
-                        <img alt="Sharda World School" src="https://www.sws.ac.in/assests/ourcampusimg/roboticslab.jpg">
+                        <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid" />
                     </div>
                     <div class="founder-note-in labss-in">
-                        <h4>Robotics Lab</h4>
-                        <p>Our Robotics lab is the right place for all tech-savvy students who want to learn STEM-
-                            related subjects. The lab allows students to plan physical robots and explore the field of
-                            robotics closely.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 labss extracurrcolor">
-                    <div class="images1 images12 labimg">
-                        <img alt="Sharda World School"
-                            src="https://www.sws.ac.in/assests/newimages/classroom/Language.jpg">
-                    </div>
-                    <div class="founder-note-in labss-in">
-                        <h4>English Language</h4>
-                        <p>The English Language Lab comes with an audio-visual installation that helps students ace the
-                            language with modern teaching techniques. It is an entirely digital and interactive system
-                            that works to improve a student&#39;s verbal and written English.
-                        </p>
+                        <h4>Math Lab</h4>
+                        <p>The Math lab is a place where students get to explore various patterns, puzzles, games, and
+                            practical learning materials to expand their ideation power.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Library Section -->
     <section class="founder-note extracurrmain">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div id="library" class="whychooseall extracurr ">
+                    <div id="library" class="whychooseall extracurr">
                         <div class="imagenae">
                             <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/newimages/classroom/Library.jpg" />
+                                <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid" />
                             </div>
                         </div>
                         <div class="founder-note-in">
                             <div class="comment more">
-
-                                <h4>Library </h4>
+                                <h4>Library</h4>
                                 <p>A Library is that one place where knowledge has no boundaries. From fiction,
-                                    nonfiction, academic to non-academic books, the SWS library is equipped with books
-                                    across all niches to suit children of all age groups. The Library room is a
-                                    well-built, spacious, air-conditioned, ventilated, and supremely lit space so that
-                                    each learner can enjoy their time reading the books they want. The room is built
-                                    away from the classrooms to ensure that there is no sound or disturbance when
-                                    children are busy reading and enjoying the literature of their choice.</p>
-
-                            </div>
-                            <a target="_blank" href="https://www.sws.ac.in/assests/web_images/library_rules.pdf"
-                                class="button2">Library Rules</a>
-                            <a target="_blank" href="https://www.sws.ac.in/assests/web_images/library_services.pdf"
-                                class="button2">Library Services</a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="whychooseall extracurr extracurrcolor">
-                        <div class="imagenae">
-                            <div class="images1 images12 canteen">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/web_images/Canteen.JPG">
-                            </div>
-                        </div>
-                        <div class="founder-note-in">
-                            <div class="comment more">
-
-                                <h4>Canteen</h4>
-                                <p>We are what we eat, and hence, SWS makes sure that the food served in the canteen is
-                                    healthy, hygienic, and filled with all the nutrition that a budding child needs. We
-                                    have a multi-cuisine kitchen that serves high-quality food and enables young
-                                    learners to become more mindful, energetic, and focused. The food served in the
-                                    canteen is cooked according to the Ayurvedic Diet, where the three doshas are taken
-                                    into consideration in order to fulfil each child’s specific food requirements. Our
-                                    canteen is the perfect place for students to take a refreshing break and enjoy the
-                                    food they love, with proper ventilation as our primary focus. This space is also an
-                                    excellent area for students to build friendships and bolster new ones by spending
-                                    lovely time with peers.
-                                </p>
-
+                                    nonfiction, academic to non-academic books, the library is equipped with books
+                                    across all niches to suit children of all age groups.</p>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -290,640 +267,147 @@
                 </div>
             </div>
         </div>
-        <div class="whychooseall extracurr   milldesec">
+    </section>
 
-
-
+    <!-- Sports Section -->
+    <section class="founder-note extracurrmain">
+        <div class="whychooseall extracurr milldesec">
             <div id="sports" class="founder-note-in milldesecin margininp" style="width:92%;">
                 <div class="comment more">
                     <h4>Sports Room</h4>
-                    <p>Physical activities are as important as academic learning. It is a must that each student
-                        engages in some game or the other to improve coordination, teamwork, stamina, immunity,and
-                        strengthen muscles. Our school facilitates a variety of outdoor and indoor games to cater to
-                        each student's interest areas. It helps the kids boost confidence, enhance mental alertness and
-                        learn skills like patience, leadership, and more. Sports in education is a crucial front as it
-                        also increases the reasoning power of students and provides them with a recreational experience
-                        apart from the regular academic routine.
-                    </p>
+                    <p>Physical activities are as important as academic learning. Our school facilitates a variety of outdoor and indoor games to cater to
+                        each student's interest areas.</p>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
+        
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 labss">
+                <div class="col-md-6 col-12 labss">
                     <div id="indoor" class="images1 images12 labimg">
-                        <img alt="Sharda World School"
-                            src="https://www.sws.ac.in/assests/web_images/Table_Tennis_Room.JPG">
+                        <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid">
                     </div>
                     <div class="founder-note-in labss-in">
                         <h4>Indoor Games</h4>
-                        <p>Our indoor game room is a vibrant, spacious, and fully air-conditioned and ventilated area
-                            where students can enjoy the games of their choice. We have games like chess that improve
-                            the mind power, table tennis that provide students with some physical movement indoors,
-                            carrom where students can enjoy playing in groups of four, a proper gymnasium and a lot
-                            more.
-                        </p>
+                        <p>Our indoor game room is a vibrant, spacious, and fully air-conditioned area
+                            where students can enjoy games like chess, table tennis, and carrom.</p>
                     </div>
                 </div>
-                <div class="col-md-6 labss extracurrcolor">
+                
+                <div class="col-md-6 col-12 labss extracurrcolor">
                     <div class="images1 images12 labimg">
-                        <img alt="Sharda World School"
-                            src="https://www.sws.ac.in/assests/web_images/Basketball_Court.JPG">
+                        <img alt="Holy Public Junior School" src="/src/assets/logo/dummy-image.jpg" class="img-fluid">
                     </div>
                     <div class="founder-note-in labss-in">
                         <h4>Outdoor Games</h4>
-                        <p>SWS is equipped with several playing grounds for students where they can explore the field of
-                            sport that they are best at. We have a football ground, a cricket pitch, a lawn tennis
-                            court, a volleyball court, and a badminton court, and they are all spacious enough to
-                            accommodate single, double, and group players.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="founder-note extracurrmain">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="whychooseall extracurr ">
-                        <div class="imagenae">
-                            <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/ourcampusimg/kidsplayingarea.jpg">
-                            </div>
-                        </div>
-                        <div class="founder-note-in">
-                            <div class="comment more">
-
-                                <h4>Kids Playing Area </h4>
-                                <p>We have not forgotten our younger students who are too young to enjoy games like
-                                    chess or cricket but need the daily dose of some fun and physical exercise as well.
-                                    For them, we have a specially curated kid playing area with several rides and swings
-                                    that are safe for all our junior kids.</p>
-
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="whychooseall extracurr extracurrcolor">
-                        <div class="imagenae">
-                            <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/ourcampusimg/activityroom.jpg">
-                            </div>
-                        </div>
-                        <div class="founder-note-in">
-                            <div class="comment more">
-
-                                <h4>Activity room </h4>
-                                <p>Our preschoolers, the children aged 3 years to 5 years, can enjoy their time at
-                                    school, socializing and learning new things in the activity room. The room is a
-                                    high-spirited area with activities like an artificial kitchen, barbershops, city
-                                    models, and more, to make the students aware of the real-life surroundings through
-                                    imitated environments. Bright colors and safe objects are used in the room to make
-                                    it 100% kids friendly, along with enough chairs and tables for the kids to have fun
-                                    together. This area also contributes to building the student's social skills from a
-                                    young age and encourages them to build blossoming friendships.
-                                </p>
-
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div id="art-craft-room" class="whychooseall extracurr ">
-                        <div class="imagenae">
-                            <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/newimages/classroom/ArtNCraft.jpg">
-                            </div>
-                        </div>
-                        <div class="founder-note-in">
-                            <div class="comment more">
-
-                                <h4>Art and Craft room</h4>
-                                <p>Creativity is a child&#39;s best friend, and young minds are the most creative.
-                                    Channeling this creativity through artwork, painting, sculpting, illustrating, and a
-                                    lot more fun and innovative activities is a must. Indulging in creative activities
-                                    regularly helps students express, explore and exhibit their emotions with utmost
-                                    precision. From expressing their love towards their parent to gifting a handmade
-                                    birthday card on their best friend's birthday, it helps them build healthy
-                                    relationships and artsy minds. Our art and craft rooms are exceptionally colorful,
-                                    filled with ingenious work around the room to inspire students,and are fully
-                                    air-conditioned to provide students with a fun and frolic time.</p>
-
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="whychooseall extracurr extracurrcolor milldesec washroom">
-
-
-
-            <div class="founder-note-in milldesecin washroom-in">
-                <div class="comment more ">
-                    <h4 style="color: #FFFFFF;">RO water and Sanitary Rooms (Washroom)</h4>
-                    <p style="color: #FFFFFF;">Only RO water is supplied inside the school premises to ensure proper
-                        health, hygiene, and sanitization of all the students. The washrooms are created according to
-                        age groups, and each urinal and wash basin's height is set accordingly. For the preschoolers,
-                        the restrooms have a glass door so that each kid can be monitored from outside. The junior
-                        school students have urinals and washbasins set at a low height for easy usage. Lastly, the
-                        washroom settings for the senior students are set as per regular standards. All the washroom
-                        spaces are cleaned regularly throughout the day to ensure an uncontaminated, clean, and
-                        germ-free environment.
-                    </p>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </section>
-    <section class="founder-note extracurrmain ovflow">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="whychooseall extracurr ">
-                        <div class="imagenae">
-                            <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/ourcampusimg/artificialzoo.jpg">
-                            </div>
-                        </div>
-                        <div class="founder-note-in">
-                            <div class="comment more">
-
-                                <h4>Artificial Zoo</h4>
-                                <p>The school is situated between lush green trees, and to bring children closer to
-                                    nature and wildlife, we have an artificial zoo installed. The zoo consists of a
-                                    number of artificial animals like elephants, giraffes, lions, and more placed on the
-                                    school grounds to give the school a feeling of fauna brought closer. It adds to the
-                                    school’s aesthetic with vibrant colors around the school grounds. The students can
-                                    spend their time learning more about each animal when on the ground and also enjoy
-                                    the forestry feel across the school.</p>
-
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="whychooseall extracurr extracurrcolor">
-                        <div class="imagenae">
-                            <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/ourcampusimg/auditorium.jpg">
-                            </div>
-                        </div>
-                        <div class="founder-note-in">
-                            <div class="comment more">
-
-                                <h4>Auditorium </h4>
-                                <p>SWS Auditorium is a highly spacious and air-conditioned area that can cater to up to
-                                    500 students at once for several school functions and inter-school competitions. The
-                                    seating is made comfortable in order to accommodate the students with ease even
-                                    during hourly long functions/competitions. The auditorium has multiple light
-                                    settings, from dim to bright, to fit each occasion accordingly. Students can enjoy
-                                    their moment of eminence when performing on our well-built large sized stage with
-                                    several spotlights. Indeed, the auditorium can make any student feel like they are
-                                    the main character in a movie!
-                                </p>
-
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="whychooseall extracurr ">
-                        <div class="imagenae">
-                            <div class="images1 images12">
-                                <img alt="Sharda World School"
-                                    src="https://www.sws.ac.in/assests/ourcampusimg/musicanddance.jpg">
-                            </div>
-                        </div>
-                        <div class="founder-note-in">
-                            <div class="comment more">
-
-                                <h4>Music and Dance Room</h4>
-                                <p>The Music and Dance rooms allow students to explore their talent and rejuvenate
-                                    themselves regularly. Dedicated rooms for music and dance are present to cater for
-                                    an individual class where dance and music professionals guide students to let
-                                    themselves free and enjoy the time at hand. Music enhances a student's learning
-                                    abilities, whereas dance increases a child's physical strength, stamina, and
-                                    flexibility. This is why SWS focuses as much on these two activities as it does on
-                                    its academic front. Both dance and music rooms are well-lit, ventilated, and
-                                    air-conditioned to ensure a seamless dance/music routine. They are situated away
-                                    from the classrooms to ensure that academic classes are not disturbed at any time.
-                                </p>
-
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
+                        <p>We have a football ground, a cricket pitch, a volleyball court, and a badminton court,
+                            all spacious enough to accommodate players.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="newslatter commonfooter">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 offset-1">
+                <div class="col-md-7 offset-md-1 col-12">
                     <div class="content">
-
-                        <h5>Take the next step towards future at Sharda World School.</h5>
-
-                        <a href="/" target="_blank" class="iswbutton"> <span>Apply Now </span></a>
+                        <h5>Take the next step towards future at Holy Public Junior School.</h5>
+                        <a href="/src/html/applynow.html" target="_blank" class="iswbutton"><span>Apply Now</span></a>
                     </div>
-
                 </div>
-                <div class="col-md-3">
-                    <img alt="Holy Public Junior School" src="/src/assets/logo/Fire_Kid_2.png" />
+                <div class="col-md-3 col-12 text-center">
+                    <img alt="Holy Public Junior School" src="/src/assets/logo/Fire_Kid_2.png" class="img-fluid" />
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- <section class="newfooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="footelogo">
-
-                            <img alt="Holy Public Junior School" src="/src/assets/logo/holy1.png" style="width:60%;" />
-
-                            <p> Copyright © 2026 Holy Public Junior School.<br /> All Rights Reserved </p>
-                        </div>
+    <!-- Footer -->
+    <section class="newfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="footelogo">
+                        <img alt="Holy Public Junior School" src="/src/assets/logo/holy1.png" style="width:60%;" class="img-fluid" />
+                        <p>Copyright © 2026 Holy Public Junior School.<br /> All Rights Reserved</p>
                     </div>
+                </div>
 
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-                                    <h6>About</h6>
-                                    <ul>
-                                        <li><a href="/about-us">About Us</a></li>
-                                        <li><a href="/leadership">Leadership Team</a></li>
-                                    </ul>
-                                    <br />
-                                    <h6>More Than A School</h6>
-
-                                    <ul>
-                                        <li><a href="/why-choose-us">Why Choose Us</a></li>
-                                        <li><a href="/career">Career</a></li>
-                                        <li><a href="/our-campus">Our Campus</a></li>
-                                        <li><a href="/gallery">Gallery</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-                                    <h6>Admission</h6>
-                                    <ul>
-                                        <li> <a href="/admissions">Admission Guidelines </a></li>
-                                        <li><a href="/" target="_blank"> Apply Now</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-
-                                    <h6>Quick Links</h6>
-                                    <ul>
-                                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                                        <li><a href="/terms-of-service">Terms of Service</a></li>
-                                        <li><a href="/policies">Policies</a></li>
-                                        <li><a href="/contact-us">Contact Us</a></li>
-                                    </ul>
-                                </div>
+                <div class="col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <div class="contanctinfo">
+                                <h6>About</h6>
+                                <ul>
+                                    <li><a href="/src/html/about.html">About Us</a></li>
+                                    <li><a href="/src/html/leadership.html">Leadership Team</a></li>
+                                </ul>
+                                <br />
+                                <h6>More Than A School</h6>
+                                <ul>
+                                    <li><a href="/src/html/whychooseus.html">Why Choose Us</a></li>
+                                    <li><a href="/src/html/career.html">Career</a></li>
+                                    <li><a href="/src/html/ourcampus.html">Our Campus</a></li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
 
+                        <div class="col-md-4 col-6">
+                            <div class="contanctinfo">
+                                <h6>Admission</h6>
+                                <ul>
+                                    <li><a href="/src/html/admissionguidline.html">Admission Guidelines</a></li>
+                                    <li><a href="/src/html/applynow.html" target="_blank">Apply Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    <div class="col-md-3">
-                        <div class="contanctinfo">
-                            <h6>Address</h6>
-                            <p>1/145 Babu Gulab Rai Marg, Delhi Gate,<br /> Agra (UP) - 282007
-                            </p>
-                            <p><a href="mailto:info@sws.ac.in">info@hpjs.ac.in,</a> <a
-                                    href="mailto:helpdesk@sws.ac.in">helpdesk@hpjs.ac.in</a></p>
-                            <p><a href="tel:+91-9758626210">+91-9758626210,</a> <a
-                                    href="http://bit.ly/3NXJGhU">0562-2850207</a></p>,
-
-                            <div class="socialnew">
-                                <a class="sociable" href=" https://www.facebook.com/share/17KNs9p7ur/?mibextid=wwXIfr
-                                    " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a class="sociable" href="https://www.linkedin.com/" target="_blank"><i
-                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a class="sociable" href="https://www.youtube.com/" target="_blank"><i
-                                        class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                <a class="sociable" href="https://www.instagram.com/holypublicjuniorschool_?igsh=djl4N3VlMHZueWN2
-                                    " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
+                        <div class="col-md-4 col-12">
+                            <div class="contanctinfo">
+                                <h6>Quick Links</h6>
+                                <ul>
+                                    <li><a href="/src/html/examinationpolicies.html">Policies</a></li>
+                                    <li><a href="/src/html/about.html">Contact Us</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
 
+                <div class="col-md-3 col-12">
+                    <div class="contanctinfo">
+                        <h6>Address</h6>
+                        <p>1/145 Babu Gulab Rai Marg, Delhi Gate,<br /> Agra (UP) - 282007</p>
+                        <p><a href="mailto:info@hpjs.ac.in">info@hpjs.ac.in</a>, <a href="mailto:helpdesk@hpjs.ac.in">helpdesk@hpjs.ac.in</a></p>
+                        <p><a href="tel:+91-9758626210">+91-9758626210</a>, <a href="tel:0562-2850207">0562-2850207</a></p>
 
-        <section class="newfooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="footelogo">
-
-                            <img alt="Holy Public Junior School" src="/src/assets/logo/holy1.png" style="width:60%;" />
-
-                            <p> Copyright © 2026 Holy Public Junior School.<br /> All Rights Reserved </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-                                    <h6>About</h6>
-                                    <ul>
-                                        <li><a href="/src/html/about.html">About Us</a></li>
-                                        <li><a href="/src/html/leadership.html">Leadership Team</a></li>
-                                    </ul>
-                                    <br />
-                                    <h6>More Than A School</h6>
-
-                                    <ul>
-                                        <li><a href="/src/html/whychooseus.html">Why Choose Us</a></li>
-                                        <li><a href="/src/html/career.html">Career</a></li>
-                                        <li><a href="/src/html/ourcampus.html">Our Campus</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-                                    <h6>Admission</h6>
-                                    <ul>
-                                        <li> <a href="/src/html/admissionguidline.html">Admission Guidelines </a></li>
-                                        <li><a href="/src/html/apllynow.html" target="_blank"> Apply Now</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="contanctinfo">
-
-                                    <h6>Quick Links</h6>
-                                    <ul>
-                                        <li><a href="/src/html/examinationpolicies.html">Policies</a></li>
-                                        <li><a href="/src/html/about.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3">
-                        <div class="contanctinfo">
-                            <h6>Address</h6>
-                            <p>1/145 Babu Gulab Rai Marg, Delhi Gate,<br /> Agra (UP) - 282007
-                            </p>
-                            <p><a href="mailto:info@sws.ac.in">info@hpjs.ac.in,</a> <a
-                                    href="mailto:helpdesk@sws.ac.in">helpdesk@hpjs.ac.in</a></p>
-                            <p><a href="tel:+91-9758626210">+91-9758626210,</a> <a
-                                    href="http://bit.ly/3NXJGhU">0562-2850207</a></p>,
-
-                            <div class="socialnew">
-                                <a class="sociable" href=" https://www.facebook.com/share/17KNs9p7ur/?mibextid=wwXIfr
-                                    " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                
-                                <a class="sociable" href="https://www.instagram.com/holypublicjuniorschool_?igsh=djl4N3VlMHZueWN2
-                                    " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-                            </div>
+                        <div class="socialnew">
+                            <a class="sociable" href="https://www.facebook.com/share/17KNs9p7ur/?mibextid=wwXIfr" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a class="sociable" href="https://www.instagram.com/holypublicjuniorschool_?igsh=djl4N3VlMHZueWN2" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <script src="/src/Javascript/script.js"></script>
+    <!-- ✅ SCRIPTS IN CORRECT ORDER -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/src/Javascript/headerLoader.js"></script>
+    <script src="/src/Javascript/script.js"></script>
 
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"></script>
-
-        <script>
-            $(document).ready(function () {
-
-
-                $("#sidebaropenleft").click(function () {
-                    $(".sidebaropenleft").toggleClass("open");
-                    /*$(".blackdiv").toggleClass("open");*/
-                    $(".color").toggleClass("change");
-
-                });
-                $(".whatnewsclose").click(function () {
-                    $(".sidebaropenleft").toggleClass("open");
-                });
-
-                $(window).scroll(function () {
-                    var windowScroll = $(window).scrollTop();
-                    var topScroll = 0;
-
-
-                    var href = document.location.href;
-                    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
-                    if (lastPathSegment == '') {
-
-                        if (windowScroll > 200) {
-                            $(".sidebaropenleft").removeClass('open');
-                        } else {
-                            $(".sidebaropenleft").addClass('open');
-                        }
-
-                    } else {
-                        $(".sidebaropenleft").removeClass('open');
-                    }
-                });
-
-            }); 
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                $('.whyslide1').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: true,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-                $('.whyslide2').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: true,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-                $('.whyslide3').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: true,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.dronimageslider').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.hosfec-slider1').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.hosfec-slider2').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.hosfec-slider3').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.hosfec-slider4').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.hosfec-slider5').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.homeimageslider').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: true,
-                    autoplay: true,
-                    slidesToScroll: 1,
-
-
-                });
-
-
-
-            });
-
-            $('.canteensec1').slick({
-
-                infinite: true,
-
-                slidesToShow: 1,
-
-                nav: false,
-
-                dots: false,
-
-                autoplay: true,
-
-                slidesToScroll: 1,
-
-            });
-
-
-
-            $('.canteensec2').slick({
-
-                infinite: true,
-
-                slidesToShow: 1,
-
-                nav: false,
-
-                dots: false,
-
-                autoplay: true,
-
-                slidesToScroll: 1,
-
-            });
-
-
-
-            $('.canteensec3').slick({
-
-                infinite: true,
-
-                slidesToShow: 1,
-
-                nav: false,
-
-                dots: false,
-
-                autoplay: true,
-
-                slidesToScroll: 1,
-
-            });
-        </script>
-
-        <script>
-            $('.modal').on('hide.bs.modal', function () {
-                var memory = $(this).html();
-                $(this).html(memory);
-            });
-        </script>
-        <script src="../Javascript/headerLoader.js"></script>
 </body>
 
 </html>

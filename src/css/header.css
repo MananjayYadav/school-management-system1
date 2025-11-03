@@ -1,104 +1,87 @@
-* {
-  box-sizing: border-box;
+/* ===== FIX: Remove overflow hidden from header and navbar ===== */
+.header {
+  overflow: visible !important; /* ✅ Allow dropdowns to show */
 }
 
-/* Top info bar */
-.headertop {
-  background: #111111;
-  font-size: 13px;
-  color: #fff;
-}
-
-/* Header logo section */
-.headerlogos {
-  padding: 10px 0;
-  text-align: center;
-}
-
-.headerlogos .school-title {
-  font-weight: 700;
-  color: #0b1220;
-  font-size: 22px;
-}
-
-.headerlogos .subtext {
-  font-size: 14px;
-  color: #777;
-}
-
-.logo img {
-  max-height: 70px;
-}
-
-/* Navbar */
+.navbar,
 .custom-navbar {
-  background-color: #d4af37;
+  overflow: visible !important; /* ✅ Allow dropdowns to show */
 }
 
-.custom-navbar .nav-link {
-  color: #0b1220;
-  font-weight: 600;
-  padding: 10px 18px;
-  transition: all 0.3s ease;
+.navbar-collapse {
+  overflow: visible !important; /* ✅ Allow dropdowns to show */
 }
 
-.custom-navbar .nav-link:hover,
-.custom-navbar .dropdown-item:hover {
-  color: #e31313;
-  background-color: transparent;
+/* ===== FIX: Ensure dropdowns have proper z-index ===== */
+.navbar .dropdown {
+  position: relative;
+  z-index: 1000; /* ✅ Above other content */
 }
 
-/* Dropdown animation */
-/* ===== Dropdown Styling ===== */
-.dropdown-menu {
-  background-color: #ed0fcf; /* white for contrast */
-  border: 2px solid #d4af37; /* golden border */
-  border-radius: 8px;
-  padding: 8px 0;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  z-index: 9999; /* ensures it appears above other elements */
+.navbar .dropdown-menu {
+  z-index: 9999 !important; /* ✅ Highest priority */
+  position: absolute !important; /* ✅ Desktop positioning */
 }
 
+/* ===== FIX: Ensure dropdown items are clickable ===== */
+.dropdown-toggle,
 .dropdown-item {
-  color: #0b1220; /* dark text for readability */
-  font-weight: 500;
-  padding: 10px 16px;
-  transition: all 0.3s ease;
+  pointer-events: auto !important; /* ✅ Enable clicks */
+  cursor: pointer !important; /* ✅ Show clickable cursor */
 }
 
-.dropdown-item:hover {
-  background-color: #d4af37; /* golden highlight */
-  color: #1a1717; /* white text on hover */
+/* ===== Desktop Dropdown Behavior ===== */
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    display: none; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
 }
 
-
-.dropdown.show .dropdown-menu {
-  display: block;
-  opacity: 1;
-}
-
-/* Navbar toggler */
-.navbar-toggler {
-  border-color: #fff;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230b1220' viewBox='0 0 30 30'%3E%3Cpath stroke='none' d='M4 7h22v2H4zM4 15h22v2H4zM4 23h22v2H4z'/%3E%3C/svg%3E");
-}
-
-/* Responsive */
+/* ===== Mobile Dropdown Behavior ===== */
 @media (max-width: 991px) {
-  .navbar-nav {
-    text-align: center;
-  }
-
-  .navbar-nav .dropdown-menu {
-    position: static;
+  .navbar .dropdown-menu {
+    position: static !important; /* ✅ Mobile positioning */
     float: none;
+    background-color: #fff;
+    color: #0b1220;
+    border: 1px solid #ddd;
+    box-shadow: none;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none; /* ✅ Hidden by default */
   }
 
-  .logo img {
-    max-height: 50px;
+  .navbar .dropdown-menu.show {
+    display: block !important; /* ✅ Show when clicked */
+    margin-top: 0;
+  }
+  
+  .navbar .dropdown-item {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .navbar .dropdown-toggle::after {
+    float: right;
+    margin-top: 8px;
+  }
+  
+  /* Fix navbar collapse overflow */
+  .navbar-collapse {
+    overflow-y: auto !important; /* ✅ Allow scrolling if needed */
+    max-height: 80vh; /* ✅ Limit height on mobile */
   }
 }

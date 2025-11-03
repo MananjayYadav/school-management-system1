@@ -1,7 +1,6 @@
 // ===============================
 // HEADER LOADER (WORKS ON ALL PAGES)
 // ===============================
-
 document.addEventListener("DOMContentLoaded", function () {
   const headerPlaceholder = document.getElementById("header-placeholder");
   if (!headerPlaceholder) {
@@ -18,11 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((html) => {
       headerPlaceholder.innerHTML = html;
 
-      // Step 2: Ensure Bootstrap CSS + JS are loaded before initializing dropdowns
+      // Step 2: Ensure Bootstrap CSS + JS are loaded
       loadBootstrapAssets()
         .then(() => {
-          initDropdowns(); // initialize dropdowns after Bootstrap is ready
-          console.log("✅ Header and dropdowns initialized successfully");
+          // Wait for DOM to settle
+          setTimeout(() => {
+            initDropdowns();
+            console.log("✅ Header and dropdowns initialized successfully");
+          }, 150);
         })
         .catch((err) => console.error("Bootstrap load error:", err));
     })
@@ -34,30 +36,24 @@ document.addEventListener("DOMContentLoaded", function () {
 // ===============================
 function loadBootstrapAssets() {
   return new Promise((resolve, reject) => {
-    // If already loaded, resolve immediately
     if (window.bootstrap) {
       resolve();
       return;
     }
 
-    // --- Load Bootstrap CSS ---
     const cssId = "bootstrap-css";
     if (!document.getElementById(cssId)) {
       const link = document.createElement("link");
       link.id = cssId;
       link.rel = "stylesheet";
-      link.href =
-        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
-      link.integrity =
-        "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH";
+      link.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+      link.integrity = "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH";
       link.crossOrigin = "anonymous";
       document.head.appendChild(link);
     }
 
-    // --- Load Bootstrap JS Bundle ---
     const jsId = "bootstrap-js";
     if (document.getElementById(jsId)) {
-      // If script tag already exists, wait for it to finish loading
       const existingScript = document.getElementById(jsId);
       if (existingScript.dataset.loaded === "true") resolve();
       else existingScript.addEventListener("load", resolve);
@@ -66,10 +62,8 @@ function loadBootstrapAssets() {
 
     const script = document.createElement("script");
     script.id = jsId;
-    script.src =
-      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
-    script.integrity =
-      "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz";
+    script.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
+    script.integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz";
     script.crossOrigin = "anonymous";
     script.onload = () => {
       script.dataset.loaded = "true";
@@ -81,33 +75,42 @@ function loadBootstrapAssets() {
 }
 
 // ===============================
-// Initialize Bootstrap dropdowns safely
+// Initialize Bootstrap dropdowns - SIMPLIFIED
 // ===============================
 function initDropdowns() {
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  const dropdownElements = document.querySelectorAll('[data-bs-toggle="dropdown"]');
+  
+  if (dropdownElements.length === 0) {
+    console.warn("⚠️ No dropdown elements found");
+    return;
+  }
 
-  dropdownToggles.forEach((toggle) => {
-    // Attach Bootstrap dropdown object
-    new bootstrap.Dropdown(toggle);
+  dropdownElements.forEach((toggle) => {
+    try {
+      // Initialize Bootstrap dropdown
+      new bootstrap.Dropdown(toggle);
+      
+      const parentDropdown = toggle.closest(".dropdown");
+      if (!parentDropdown) return;
 
-    // Optional: Add hover support for desktop
-    toggle.addEventListener("mouseenter", (e) => {
+      // ONLY add hover for desktop
       if (window.innerWidth > 991) {
-        const dropdown = bootstrap.Dropdown.getInstance(e.target);
-        dropdown.show();
-      }
-    });
+        parentDropdown.addEventListener("mouseenter", function () {
+          const dropdown = bootstrap.Dropdown.getInstance(toggle);
+          if (dropdown) dropdown.show();
+        });
 
-    const parentDropdown = toggle.closest(".dropdown");
-    if (parentDropdown) {
-      parentDropdown.addEventListener("mouseleave", (e) => {
-        if (window.innerWidth > 991) {
-          const dropdown = bootstrap.Dropdown.getInstance(
-            e.currentTarget.querySelector(".dropdown-toggle")
-          );
-          dropdown.hide();
-        }
-      });
+        parentDropdown.addEventListener("mouseleave", function () {
+          const dropdown = bootstrap.Dropdown.getInstance(toggle);
+          if (dropdown) dropdown.hide();
+        });
+      }
+      // Mobile clicks are handled automatically by Bootstrap
+      
+    } catch (error) {
+      console.error("Error initializing dropdown:", error);
     }
   });
+
+  console.log(`✅ Initialized ${dropdownElements.length} dropdown(s)`);
 }

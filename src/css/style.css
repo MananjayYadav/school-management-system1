@@ -46,7 +46,6 @@ body {
     right: 0px;
     height: 100%;
     width: 0px;
-    z-index: -1;
     content: '';
     color: #fff !important;
     background: #000;
@@ -368,7 +367,6 @@ body {
 .haccordian {
     padding: 50px 0;
     position: relative;
-    z-index: 1;
 }
 
 .haccordian .horizontal-accordion {
@@ -1501,10 +1499,6 @@ body {
     display: none
 }
 
-.slick-slide.dragging img {
-    pointer-events: none
-}
-
 .slick-initialized .slick-slide {
     display: block
 }
@@ -1569,135 +1563,6 @@ body {
 .nocontroller .slick-next {
     display: none !important;
 }
-
-/* .sldier .slick-dots {
-    display: none !important;
-}
-
-.sldier .slick-prev,
-.sldier .slick-next {
-    width: 50px;
-    height: 50px;
-    background: #0D0D0D;
-    border: 0;
-    border-radius: 40px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
-    color: #fff;
-    font-size: 0;
-    line-height: 48px;
-    text-align: center;
-    top: -80px;
-    transition: ease all 0.3s;
-}
-
-.sldier .slick-prev {
-    position: absolute;
-    margin: 0px 0 0px 0;
-    right: 60px;
-    z-index: 2;
-}
-
-.sldier .slick-next {
-    position: absolute;
-    margin: 0px 0 0px 0;
-    right: 0px;
-    z-index: 2;
-}
-
-.sldier .slick-prev:before {
-    content: "\e605";
-    font-size: 16px;
-    font-family: 'simple-line-icons';
-}
-
-.sldier .slick-prev:after {
-    content: "\e605";
-    font-size: 16px;
-    font-family: 'simple-line-icons';
-    position: absolute;
-    left: 16px;
-}
-
-.sldier .slick-next:before {
-    content: "\e606";
-    font-size: 16px;
-    font-family: 'simple-line-icons';
-}
-
-.sldier .slick-next:after {
-    content: "\e606";
-    font-size: 16px;
-    font-family: 'simple-line-icons';
-    position: absolute;
-    left: 16px;
-} */
-
-/* .sldier .slick-prev:hover,
-.sldier .slick-next:hover {
-    background: #d1af21;
-    color: #fff;
-}
-
-
-.sldier1 .slick-prev,
-.sldier1 .slick-next {
-    width: 50px;
-    height: 50px;
-    background: #0D0D0D;
-    border: 0;
-    border-radius: 40px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
-    color: #fff;
-    font-size: 0;
-    line-height: 48px;
-    text-align: center;
-    bottom: 20px;
-    top: auto !important;
-}
-
-.sldier1 .slick-prev {
-    position: absolute;
-    margin: 0px 0 0px 0;
-    right: -70px;
-    z-index: 2;
-}
-
-.sldier1 .slick-next {
-    position: absolute;
-    margin: 0px 0 0px 0;
-    right: -130px;
-    z-index: 2;
-}
-
-.sldier2 .slick-prev,
-.sldier2 .slick-next {
-    width: 50px;
-    height: 50px;
-    background: #0D0D0D;
-    border: 0;
-    border-radius: 40px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
-    color: #fff;
-    font-size: 0;
-    line-height: 48px;
-    text-align: center;
-    top: 50%;
-    transition: ease all 0.3s;
-}
-
-.sldier2 .slick-prev {
-    position: absolute;
-    margin: 0px 0 0px 0;
-    left: -70px;
-    z-index: 2;
-}
-
-.sldier2 .slick-next {
-    position: absolute;
-    margin: 0px 0 0px 0;
-    right: -70px;
-    z-index: 2;
-} */
 
 .parenttesti .sldier .slick-prev:hover,
 .parenttesti .sldier .slick-next:hover {
@@ -2863,10 +2728,6 @@ body {
     order: 2;
 }
 
-.mobilemenu {
-    display: none !important;
-}
-
 .admissionfeestructure .headingst {
     display: block;
     font-weight: 400;
@@ -2876,7 +2737,7 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
     .mobilemenu {
         display: block !important;
@@ -2913,7 +2774,6 @@ body {
         width: 100%;
         padding: 50px 0 0 0;
         position: relative;
-        z-index: 1;
     }
 
     .commensec {
@@ -3232,14 +3092,6 @@ body {
 
     .galleryhome:before {
         top: 300px;
-    }
-
-    .heading1 h3 {
-        background: none;
-    }
-
-    .heading1:after {
-        display: none;
     }
 
     .newslatter .nlsec .swbutton2 {
