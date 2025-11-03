@@ -1101,7 +1101,6 @@ body {
 
 .fivelement .element4 img {
     width: 50%;
-    absolute;
     bottom: 0;
     opacity: .9;
 }
@@ -2046,7 +2045,7 @@ body {
     border-radius: 50%;
     background: #fff;
     text-indent: -9999px;
-    b margin: 0px 10px;
+    margin: 0px 10px;
 }
 
 .dotes .slick-dots li.slick-active button {
