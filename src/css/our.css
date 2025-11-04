@@ -1,0 +1,305 @@
+.comment {
+    padding: 45px;
+}
+
+.founder-note {
+    padding: 40px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.founder-note .container {
+    max-width: 1200px;
+}
+
+.founder-note-in small {
+    color: #a40000;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.founder-note-in h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0 20px;
+    color: #222;
+    position: relative;
+}
+
+.founder-note-in h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60px;
+    height: 3px;
+    background-color: #a40000;
+    border-radius: 2px;
+}
+
+.founder-note-in p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.founder-note .images {
+    text-align: center;
+    background: none;
+}
+
+.founder-note .images img {
+    border-radius: 12px;
+    box-shadow: none;
+    background: transparent;
+    transition: transform 0.4s ease;
+}
+
+.founder-note .images img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+    .founder-note {
+        padding: 60px 0;
+    }
+
+    .founder-note .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .founder-note-in {
+        margin-top: 30px;
+    }
+
+    .founder-note-in h4 {
+        font-size: 1.6rem;
+    }
+
+    .founder-note-in p {
+        font-size: 0.95rem;
+    }
+
+    .founder-note .images img {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 576px) {
+    .founder-note {
+        padding: 40px 0;
+    }
+
+    .founder-note-in small {
+        font-size: 0.85rem;
+    }
+
+    .founder-note-in h4 {
+        font-size: 1.4rem;
+    }
+
+    .founder-note-in p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ====== CAMPUS SECTION (Classrooms + Labs) ====== */
+.founder-note.extracurrmain {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.whychooseall.extracurr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    flex-wrap: wrap;
+}
+
+.whychooseall.extracurrcolor {
+    background: #fff5f5;
+}
+
+.whychooseall .imagenae {
+    flex: 1;
+    text-align: center;
+}
+
+.whychooseall .images12 img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 16px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.whychooseall .images12 img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.whychooseall .founder-note-in {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.whychooseall .founder-note-in h4 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #222;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.whychooseall .founder-note-in h4::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #a40000;
+    border-radius: 2px;
+}
+
+.whychooseall .founder-note-in p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+/* ====== LABS SECTION ====== */
+.milldesec {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 70px 0 30px;
+}
+
+.milldesecin h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    position: relative;
+    display: inline-block;
+}
+
+.milldesecin h4::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #a40000;
+    border-radius: 2px;
+}
+
+.milldesecin p {
+    margin-top: 20px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ====== LABS GRID ====== */
+.labss {
+    text-align: center;
+    padding: 50px 25px;
+    transition: all 0.4s ease;
+}
+
+.labss:hover {
+    background: #fff5f5;
+    transform: translateY(-5px);
+}
+
+.labss .labimg img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+.labss:hover .labimg img {
+    transform: scale(1.05);
+}
+
+.labss-in {
+    margin-top: 20px;
+}
+
+.labss-in h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #a40000;
+    margin-bottom: 10px;
+}
+
+.labss-in p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 991px) {
+    .whychooseall.extracurr {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .whychooseall .founder-note-in {
+        padding: 20px;
+    }
+
+    .whychooseall .images12 img {
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .milldesec {
+        padding: 50px 0 20px;
+    }
+
+    .labss {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .founder-note.extracurrmain {
+        padding: 50px 0;
+    }
+
+    .whychooseall .founder-note-in h4 {
+        font-size: 1.4rem;
+    }
+
+    .whychooseall .founder-note-in p {
+        font-size: 0.9rem;
+    }
+
+    .milldesecin h4 {
+        font-size: 1.6rem;
+    }
+
+    .milldesecin p {
+        font-size: 0.9rem;
+    }
+
+    .labss-in h4 {
+        font-size: 1.2rem;
+    }
+
+    .labss-in p {
+        font-size: 0.9rem;
+    }
+}
