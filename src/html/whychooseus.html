@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
     <div class="innseslider">
         <div class="container">
@@ -39,11 +39,8 @@
         <section class="about-sec">
             <div class="container">
                 <div class="row">
-
                     <div class="col-md-6">
                         <div class="content contentwhy">
-
-
                             <h2>45+ Years of Educational Excellence</h2>
 
                             <p>At Holy Public Junior School, we believe in nurturing young minds to become
@@ -512,7 +509,7 @@
                             <div class="socialnew">
                                 <a class="sociable" href=" https://www.facebook.com/share/17KNs9p7ur/?mibextid=wwXIfr
                                     " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                
+
                                 <a class="sociable" href="https://www.instagram.com/holypublicjuniorschool_?igsh=djl4N3VlMHZueWN2
                                     " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
@@ -527,12 +524,11 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></scrip>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></scrip >
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous"></script>
 
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -543,36 +539,36 @@
             crossorigin="anonymous"></script>
 
         <script>
-            $(document).ready(function () {
+                                                                                                                          $(document).ready(function () {
 
 
-                $("#sidebaropenleft").click(function () {
-                    $(".sidebaropenleft").toggleClass("open");
-                    /*$(".blackdiv").toggleClass("open");*/
-                    $(".color").toggleClass("change");
+                                                                                                                              $("#sidebaropenleft").click(function () {
+                                                                                                                                  $(".sidebaropenleft").toggleClass("open");
+                                                                                                                                  /*$(".blackdiv").toggleClass("open");*/
+                                                                                                                                  $(".color").toggleClass("change");
 
+                                                                                                                              });
+                                                                                                                          $(".whatnewsclose").click(function () {
+                                                                                                                              $(".sidebaropenleft").toggleClass("open");
                 });
-                $(".whatnewsclose").click(function () {
-                    $(".sidebaropenleft").toggleClass("open");
-                });
 
-                $(window).scroll(function () {
+                                                                                                                          $(window).scroll(function () {
                     var windowScroll = $(window).scrollTop();
-                    var topScroll = 0;
+                                                                                                                          var topScroll = 0;
 
 
-                    var href = document.location.href;
-                    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
-                    if (lastPathSegment == '') {
+                                                                                                                          var href = document.location.href;
+                                                                                                                          var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
+                                                                                                                          if (lastPathSegment == '') {
 
                         if (windowScroll > 200) {
-                            $(".sidebaropenleft").removeClass('open');
+                                                                                                                              $(".sidebaropenleft").removeClass('open');
                         } else {
-                            $(".sidebaropenleft").addClass('open');
+                                                                                                                              $(".sidebaropenleft").addClass('open');
                         }
 
                     } else {
-                        $(".sidebaropenleft").removeClass('open');
+                                                                                                                              $(".sidebaropenleft").removeClass('open');
                     }
                 });
 
@@ -580,93 +576,93 @@
         </script>
 
         <script>
-            $(document).ready(function () {
-                $('.whyslide1').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: true,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $(document).ready(function () {
+                                                                                                                              $('.whyslide1').slick({
+                                                                                                                                  infinite: true,
+                                                                                                                                  slidesToShow: 1,
+                                                                                                                                  nav: true,
+                                                                                                                                  dots: false,
+                                                                                                                                  autoplay: true,
+                                                                                                                                  slidesToScroll: 1,
+                                                                                                                              });
+                                                                                                                          $('.whyslide2').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: true,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
                 });
-                $('.whyslide2').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: true,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-                $('.whyslide3').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: true,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
-                });
-
-                $('.dronimageslider').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $('.whyslide3').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: true,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
                 });
 
-                $('.hosfec-slider1').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $('.dronimageslider').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: false,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
                 });
 
-                $('.hosfec-slider2').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $('.hosfec-slider1').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: false,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
                 });
 
-                $('.hosfec-slider3').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $('.hosfec-slider2').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: false,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
                 });
 
-                $('.hosfec-slider4').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $('.hosfec-slider3').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: false,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
                 });
 
-                $('.hosfec-slider5').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: false,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $('.hosfec-slider4').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: false,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
                 });
 
-                $('.homeimageslider').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    nav: false,
-                    dots: true,
-                    autoplay: true,
-                    slidesToScroll: 1,
+                                                                                                                          $('.hosfec-slider5').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: false,
+                                                                                                                          dots: false,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
+                });
+
+                                                                                                                          $('.homeimageslider').slick({
+                                                                                                                              infinite: true,
+                                                                                                                          slidesToShow: 1,
+                                                                                                                          nav: false,
+                                                                                                                          dots: true,
+                                                                                                                          autoplay: true,
+                                                                                                                          slidesToScroll: 1,
 
 
                 });
@@ -675,63 +671,63 @@
 
             });
 
-            $('.canteensec1').slick({
+                                                                                                                          $('.canteensec1').slick({
 
-                infinite: true,
+                                                                                                                              infinite: true,
 
-                slidesToShow: 1,
+                                                                                                                          slidesToShow: 1,
 
-                nav: false,
+                                                                                                                          nav: false,
 
-                dots: false,
+                                                                                                                          dots: false,
 
-                autoplay: true,
+                                                                                                                          autoplay: true,
 
-                slidesToScroll: 1,
-
-            });
-
-
-
-            $('.canteensec2').slick({
-
-                infinite: true,
-
-                slidesToShow: 1,
-
-                nav: false,
-
-                dots: false,
-
-                autoplay: true,
-
-                slidesToScroll: 1,
+                                                                                                                          slidesToScroll: 1,
 
             });
 
 
 
-            $('.canteensec3').slick({
+                                                                                                                          $('.canteensec2').slick({
 
-                infinite: true,
+                                                                                                                              infinite: true,
 
-                slidesToShow: 1,
+                                                                                                                          slidesToShow: 1,
 
-                nav: false,
+                                                                                                                          nav: false,
 
-                dots: false,
+                                                                                                                          dots: false,
 
-                autoplay: true,
+                                                                                                                          autoplay: true,
 
-                slidesToScroll: 1,
+                                                                                                                          slidesToScroll: 1,
+
+            });
+
+
+
+                                                                                                                          $('.canteensec3').slick({
+
+                                                                                                                              infinite: true,
+
+                                                                                                                          slidesToShow: 1,
+
+                                                                                                                          nav: false,
+
+                                                                                                                          dots: false,
+
+                                                                                                                          autoplay: true,
+
+                                                                                                                          slidesToScroll: 1,
 
             });
         </script>
 
         <script>
-            $('.modal').on('hide.bs.modal', function () {
+                                                                                                                          $('.modal').on('hide.bs.modal', function () {
                 var memory = $(this).html();
-                $(this).html(memory);
+                                                                                                                          $(this).html(memory);
             });
         </script>
         <script src="../Javascript/headerLoader.js"></script>
